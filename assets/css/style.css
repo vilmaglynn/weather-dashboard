@@ -10,6 +10,7 @@ body {
   padding: 13px 20px 13px;
   outline: 0;
   border: 1px solid black;
+  border-radius: 2px;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -28,6 +29,7 @@ body {
   top: 7px;
   left: 7px;
   transition: 0.2s;
+  border-radius: 2px;
 }
 
 .button-52:hover:after {
@@ -45,4 +47,10 @@ body {
   .button-52 {
     padding: 13px 50px 13px;
   }
+}
+
+#today {
+  background-color: rgb(224, 236, 220);
+  padding: 10px;
+  border-radius: 2px;
 }
