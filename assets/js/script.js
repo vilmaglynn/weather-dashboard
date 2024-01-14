@@ -49,14 +49,21 @@ $(document).ready(function () {
 
                 // Append image and forecast details to hourlyForecastContainer
                 dayContainer.append(
-                  `<div><img src="${imageUrl}" alt="Weather Icon"><br> ${forecast.weather[0].description} <br>Temp: ${tempC} | Wind: ${forecast.wind.speed} m/ph | Humidity: ${forecast.main.humidity}%</div> <hr>`
+                  `<div><img src="${imageUrl}" alt="Weather Icon"><br> ${forecast.weather[0].description} <br>Temp: ${tempC} |<br> Wind: ${forecast.wind.speed} m/ph | <br>Humidity: ${forecast.main.humidity}%</div> <hr>`
                 );
 
                 // Append the day container to the main forecast container
                 forecastContainer.append(dayContainer);
               }
             }
+
+            //====================================
             // Display TODAY's description on screen
+            // Use dayjs to get the current date and time
+            const currentDate = dayjs().format("dddd DD MMM YYYY | HH:mm");
+            // Display the formatted date and time on the screen
+            const txt1 = $("<h2>").text(currentDate);
+            $("#today").append(txt1);
             const location = `${cityname}, ${country}`;
             const locationParagraph = $("<h2>").text(location);
             const description0 = $("<span>").text(
@@ -89,22 +96,6 @@ $(document).ready(function () {
       .catch((error) => {
         console.log(error);
       });
-
-    // Get current date/time to display on the website main area
-    function displayDateTime() {
-      // Use dayjs to get the current date and time
-      const currentDate = dayjs();
-      // Format the date and time as a string
-      const formattedDateTime = currentDate.format("dddd DD MMM YYYY | HH:mm");
-      // Display the formatted date and time on the screen
-      const txt1 = $("<h2>").text(formattedDateTime);
-      $("#today").append(txt1);
-    }
-
-    // Call the function when the document is ready
-    $(document).ready(function () {
-      displayDateTime();
-    });
 
     // Clear old data
     $("#today").empty();

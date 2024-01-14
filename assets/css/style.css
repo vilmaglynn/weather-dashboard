@@ -8,6 +8,7 @@
 
 /* main section for todays forecast */
 #today {
+  display: flex;
   background-color: rgb(237, 252, 243);
   padding: 10px;
   border-radius: 2px;
