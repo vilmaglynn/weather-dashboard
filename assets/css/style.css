@@ -1,76 +1,46 @@
 /* CSS */
 
-.button-52 {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-52:after {
-  content: "";
-  background-color: #ffe54c;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-  border-radius: 2px;
-}
-
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
 .input-group {
   display: flex;
   margin-bottom: 10px;
-  display: flex;
   align-items: start;
 }
-@media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
-  }
-}
 
+/* main section for todays forecast */
 #today {
-  background-color: rgb(186, 239, 250);
+  background-color: rgb(237, 252, 243);
   padding: 10px;
   border-radius: 2px;
+  border: 1px solid rgb(227, 226, 226);
 }
 
-#forecast {
-  background-color: rgb(240, 184, 247);
-  padding: 10px;
-  border-radius: 2px;
+/* main section for all 5 day forecast */
+
+img {
+  background-color: white;
+  border: 1px solid rgb(227, 226, 226);
+  margin: 10px;
 }
 
-.forecast-container {
+#weatherForecast {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .day-container {
-  border: 1px solid #ccc;
+  flex-basis: calc(20% - 20px);
+  margin: 10px;
   padding: 10px;
-  flex: 1;
-  min-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
 }
 
 .hourly-forecast {
   margin-top: 10px;
+}
+
+.hourly-forecast div {
+  margin-bottom: 5px;
 }
