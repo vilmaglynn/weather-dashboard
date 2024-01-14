@@ -28,7 +28,7 @@ Link to deployed page
 
 
 
-![portfolio](./assets/images/screenshot.png)
+![portfolio](./assets/weatherapp_image.png)
 
 ## License
 MIT License
