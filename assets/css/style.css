@@ -45,3 +45,18 @@ img {
 .hourly-forecast div {
   margin-bottom: 5px;
 }
+
+li {
+  list-style-type: none;
+}
+
+.city-button {
+  outline: none;
+  border: none;
+}
+.deleteButton {
+  border: none;
+  padding: 5px;
+  background-color: rgb(213, 6, 6);
+  color: white;
+}

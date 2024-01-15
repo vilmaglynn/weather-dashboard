@@ -23,6 +23,7 @@ EDx Bootcamp challenge - Create a weather app
 ## Usage
 
 Link to deployed page
+https://vilmaglynn.github.io/weather-dashboard/
 
 
 
